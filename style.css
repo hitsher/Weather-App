@@ -1,0 +1,241 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    width: 95vw;
+    height: 90vh;
+    margin: 10px auto;
+    max-width: 600px;
+    min-height: 600px;
+}
+
+.header {
+    height: 20%;
+    background-color: #2F4858;
+    text-align: center;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#temp,
+#humidity,
+#wind,
+#clouds,
+#pressure {
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 1s cubic-bezier(0.03, 0.81, 0.11, 0.94);
+    transition: all 1s cubic-bezier(0.03, 0.81, 0.11, 0.94);
+}
+
+p {
+    font-family: "Courier New";
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+#clouds {
+    top: 95%;
+}
+
+.city-icon-holder {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#cityName {
+    font-family: "Courier New";
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: all 1s cubic-bezier(0.03, 0.81, 0.11, 0.94);
+    transition: all 1s cubic-bezier(0.03, 0.81, 0.11, 0.94);
+}
+
+#icon {
+    width: 15vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.city-icon {
+    height: 40%;
+    width: 100%;
+    background-color: #61BAAD;
+}
+
+.city-icon:hover {
+    background-color: #50aaac;
+}
+
+.temperature {
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    height: 20%;
+    width: 50%;
+    background-color: #FF675B;
+}
+
+.temperature:hover {
+    background-color: #EE564A;
+}
+
+#tempInfo,
+#humidityInfo,
+#windInfo,
+#pressureInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
+.temperature:hover #tempInfo {
+    display: block;
+    background-color: rgb(197, 176, 175);
+    opacity: 0.7;
+}
+
+.humidity {
+    height: 20%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    background-color: #4A5783;
+}
+
+.humidity:hover {
+    background-color: #3A4672;
+}
+
+.humidity:hover #humidityInfo {
+    display: block;
+    background-color: rgb(197, 176, 175);
+    opacity: 0.7;
+}
+
+.wind {
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    height: 20%;
+    width: 50%;
+    background-color: #8E5B9A;
+    border-bottom-left-radius: 20px;
+}
+
+.wind:hover {
+    background-color: #7D4A8A;
+}
+
+.wind:hover #windInfo {
+    display: block;
+    background-color: rgb(197, 176, 175);
+    opacity: 0.7;
+}
+
+.pressure {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    height: 20%;
+    width: 50%;
+    background-color: rgb(82, 107, 24);
+    border-bottom-right-radius: 20px;
+}
+
+.pressure:hover {
+    background-color: rgb(99, 126, 35);
+}
+
+.pressure:hover #pressureInfo {
+    display: block;
+    background-color: rgb(197, 176, 175);
+    opacity: 0.7;
+}
+
+#searchBtn,
+#localBtn {
+    color: #eee;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#searchTxt {
+    font-size: 15px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    padding-right: 1px;
+    padding-left: 1px;
+    text-align: center;
+    margin: 0 15px 0;
+    width: 200px;
+    -webkit-transition: all 1s cubic-bezier(0.03, 0.81, 0.11, 0.94);
+    transition: all 1s cubic-bezier(0.03, 0.81, 0.11, 0.94);
+}
+
+.search {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+    #searchTxt {
+        height: 40px;
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #temp,
+    #humidity,
+    #wind,
+    #clouds,
+    #pressure {
+        font-size: 35px;
+    }
+
+    #cityName {
+        font-size: 35px;
+    }
+
+    #searchBtn,
+    #localBtn {
+        margin-top: 13px;
+    }}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="PD">
+    <title>WeatherApp</title>
+    <meta name="description" content="Weather-App">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container">
+        <header class="header">
+            <div class="search">
+                <a id='localBtn' href="#" title="Your location"><i class="fas fa-map-marker-alt fa-lg"></i></a>
+                <input type="text" placeholder="Enter city name" id="searchTxt">
+                <a id="searchBtn" href="#" title="Search"><i class="fas fa-search fa-lg"></i></a>
+            </div>
+        </header>
+        <main id="main">
+            <div class="city-icon">
+                <div class="city-icon-holder">
+                    <div id="cityName"></div>
+                    <img src="" alt="" id="icon">
+                    <div id="clouds"></div>
+                </div>
+            </div>
+            <div class="temperature">
+                <div id="temp"></div>
+                <div id="tempInfo">
+                    <p>Temperature</p>
+                </div>
+            </div>
+            <div class="humidity">
+                <div id="humidity"></div>
+                <div id="humidityInfo">
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <div id="wind"></div>
+                <div id="windInfo">
+                    <p>Wind</p>
+                </div>
+            </div>
+            <div class="pressure">
+                <div id="pressure"></div>
+                <div id="pressureInfo">
+                    <p>Pressure</p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
