@@ -3,4 +3,4 @@ Weather-App
 
 
 
-![alt text](Screenshot.png "Screenshot")
+![alt text](screenshot.png "Screenshot")
